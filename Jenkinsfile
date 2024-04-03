@@ -1,5 +1,9 @@
 pipeline {
   agent any
+  tools { 
+      maven 'ALAN_MVN' 
+      jdk 'ALAN_JAVA1.8.0' 
+  }
   stages {
     stage('check out') {
       steps {
